@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="login-container">
+      <h1>Login page</h1>
+      <form action="">
+        <input
+          type="email"
+          class="input-feild"
+          name=""
+          id="email-feild"
+          placeholder="Username"
+        />
+        <br />
+        <br />
+        <input
+          type="password"
+          class="input-feild"
+          placeholder="Password"
+          id="password-feild-log"
+        />
+        <br />
+        <br />
+        <br />
+        <button
+          type="submit"
+          style="margin-left: 20px"
+          onclick="registerUser()"
+        >
+          Login
+        </button>
+        <br />
+        <br />
+        <br />
+        <label for="">i don't have an account </label
+        ><a href="register.html">Register</a>
+      </form>
+      <script>
+        const userName = document.getElementById("email-feild-log").value;
+        const passWord = document.getElementById("password-feild-log").value;
+
+        const registUserName = document.getElementById("email-feild-reg").value;
+        const registPassWord =
+          document.getElementById("password-feild-reg").value;
+
+        const users = [];
+
+        function checkUser() {}
+
+        function registerUser() {
+          if (userName.value == "" || passWord.value == "") {
+            alert("requried details needed");
+          } else {
+            users.push({
+              email: registUserName.value,
+              pass: registPassWord.value,
+            });
+          }
+
+          users.forEach((element) => {
+            console.log(element.email);
+          });
+        }
+      </script>
+    </div>
+  </body>
+</html>
