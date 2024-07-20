@@ -1,0 +1,30 @@
+.board{
+    display:flex;
+    flex-direction: column;
+    margin: 0px;
+    width: 720px;
+    height: 720px;
+    background-color: rgb(185, 55, 55);
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+
+    width: 688px;
+    height: 87px;
+    background-color: antiquewhite;
+}
+.black-box{
+    width: 86px;
+    height: 86px;
+    background-color: black;
+}
+.white-box{
+    width: 86px;
+    height: 86px;
+    background-color: white;
+}
