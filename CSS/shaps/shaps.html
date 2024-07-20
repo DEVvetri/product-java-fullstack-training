@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .wrap-rows {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 50px;
+      }
+      .square {
+        width: 100px;
+        height: 100px;
+
+        border-radius: 0px;
+        border-style: solid;
+        background-color: red;
+      }
+      .retangle {
+        width: 150px;
+        height: 100px;
+        border-radius: 0px;
+        border-style: solid;
+        background-color: rgb(255, 255, 0);
+      }
+      .tairoized {
+        width: 200px;
+        height: 0px;
+        border-bottom: 100px solid #555;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+      }
+      .triangule {
+        width: 200;
+        border-bottom: 150px solid #555;
+        background-color: rgb(255, 255, 255);
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+      }
+      .oval {
+        width: 300px;
+        height: 150px;
+        background-color: aqua;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-bottom-right-radius: 50%;
+        border-bottom-left-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap-rows">
+      <div class="square"></div>
+      <div class="retangle"></div>
+      <div class="tairoized"></div>
+      <div class="triangule"></div>
+      <div class="oval"></div>
+    </div>
+  </body>
+</html>

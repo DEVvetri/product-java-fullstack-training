@@ -1,0 +1,23 @@
+body{
+    background: url("back.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin: 20px;
+}
+h2{
+    color: white;
+    background-color: rgb(117, 28, 6);
+    border: 2px solid green;
+    height: 45px;
+    align-content: center;
+    padding-left: 10px;
+}
+p{
+    color: white;
+    margin: 0px;
+    background-color: orange;
+    border: 3px solid red;
+    padding: 25px;
+
+}

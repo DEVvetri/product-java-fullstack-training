@@ -1,0 +1,116 @@
+.container{
+    width: 60%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    flex-direction: row;
+    display: flex;
+}
+body{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction:column;
+    justify-content: space-around;
+    align-self: center;
+    align-items: center;
+    margin-top: 100px;
+}
+.container-login{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(98, 215, 245, 0.788);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+.container-register{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(98, 245, 172, 0.788);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    
+}
+
+.container-image{
+    
+    width: 50%;
+    height: 100%;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://th.bing.com/th/id/OIP.HdztF3ZvgKH-M1NdQjKMJAHaHa?w=800&h=800&rs=1&pid=ImgDetMain");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px;
+}
+.container-image-res{
+    width: 50%;
+    height: 100%;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://img.freepik.com/premium-vector/stock-market-trading-illustration-concept_251005-442.jpg?w=360");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+.input-feild{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border-style: none;
+    padding: 10px;
+    font-size: 16px;
+}
+.button-login{
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgb(0, 251, 255),white);
+}
+
+
+.button-register{
+    width: 250px;
+    height: 45px;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(98, 245, 172, 0.788)  ,white);
+}
+
+
+.button-login:hover{
+    background-image: linear-gradient(to right,white  ,rgb(0, 251, 255));
+}
+.button-register:hover{
+    background-image: linear-gradient(to right,white  , rgba(98, 245, 172, 0.788));
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+a:hover{
+    font-size: 16px;
+}
+h1,p,h2,h3{
+    margin: 0px;
+}

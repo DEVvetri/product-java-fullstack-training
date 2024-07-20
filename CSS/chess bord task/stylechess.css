@@ -1,0 +1,30 @@
+.board{
+    display:flex;
+    flex-direction: column;
+  
+    width: 700px;
+    height: 704px;
+    border: 7px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width:700px;
+    height: 88px;
+    background-color: antiquewhite;
+    
+}
+.black-box{
+    width: 90px;
+    height: 88px;
+    background-color: black;
+
+}
+.white-box{
+    width: 90px;
+    height: 88px;
+    background-color: rgb(254, 184, 184);
+}
