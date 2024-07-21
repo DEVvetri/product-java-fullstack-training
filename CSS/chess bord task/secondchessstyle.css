@@ -5,8 +5,8 @@
     display: grid;
     border: 7px solid black;
     padding: 6px;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: repeat(8,1fr);
 }
 
 .black-box{
