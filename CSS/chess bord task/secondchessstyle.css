@@ -1,0 +1,19 @@
+.container{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 800px;
+    display: grid;
+    border: 7px solid black;
+    padding: 6px;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+}
+
+.black-box{
+    background-color: rgb(37, 37, 37);
+
+}
+
+.white-box{
+    background-color: rgba(240, 146, 187, 0.678);
+}
