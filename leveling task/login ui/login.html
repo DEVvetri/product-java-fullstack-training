@@ -15,7 +15,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="loginStyle.css" />
   </head>
-  <body class="bodyc">
+  <body class="bodyc" id="bodys">
     <div class="image-container" id="b"></div>
     <div class="container">
       <form action="">
@@ -58,20 +58,23 @@
       </form>
     </div>
     <script>
-      const url = "https://med-vista.vercel.app/assets/female_doc-pnVZjHUO.png";
       const gender = document.getElementById("gender");
       var body = document.getElementById("b");
-
+      var main = document.getElementById("bodys");
+      body.classList.add("add-boy");
       gender.addEventListener("change", function () {
         var values = gender.value;
         var text = gender.options[gender.selectedIndex].text;
         console.log(text);
         if (text === "Female") {
           body.classList.remove("add-boy");
+          document.body.style.backgroundColor = "#ec1765";
           body.classList.add("add-girl");
           console.log("yes girl");
         } else {
           body.classList.remove("add-girl");
+
+          document.body.style.backgroundColor = "#07b7da";
           console.log("yes boy");
           body.classList.add("add-boy");
         }
