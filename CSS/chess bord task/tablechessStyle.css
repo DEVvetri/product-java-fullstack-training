@@ -1,0 +1,28 @@
+.container{
+    width: 1015px;
+    height: 845px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+table{
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(255, 255, 255);
+    border: 7px solid rgb(255, 255, 255);
+    border-collapse: collapse;
+}
+.box{
+    width: 125px;   
+    height: 100px;
+    background-color: aqua;
+}
+.black-box{
+    background-color: rgb(10, 10, 10);
+}
+.white-box{
+    background-color: rgb(203, 149, 140);
+}
