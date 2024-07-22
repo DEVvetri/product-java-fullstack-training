@@ -1,0 +1,124 @@
+.bodyc{
+    display: flex;
+    height: 98vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 150px;
+    background-color: #07b7da;
+
+}  
+
+.image-container{
+    width: 880px;
+    height: 100vh;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position-x:  0px;
+    background-size: 100%;
+   background-image: url("https://med-vista.vercel.app/assets/male_doc-CHaILwYJ.png");
+
+}
+
+.add-girl{
+    background-image: url("https://med-vista.vercel.app/assets/female_doc-pnVZjHUO.png");
+    background-size: 160%;
+    background-position-x: -160px;
+}
+.add-boy{
+     background-position-x:  0px;
+     background-size: 100%;
+    background-image: url("https://med-vista.vercel.app/assets/male_doc-CHaILwYJ.png");
+}
+.container{
+    width: 580px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0 0 15px rgb(105, 102, 102);
+    backdrop-filter: 0 0 25px 0 ;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: start;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.login-button{
+    align-self: center;
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    color: white;
+    background-color: #07b7da;
+    border: 0;
+}
+.other-button{
+    width: 450px;
+    height: 60px;
+    border-radius: 50px;
+   align-self: center;
+}
+.apple-temp{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+.google-temp{
+    background-color: white;
+    border: 1 solid rgb(168, 167, 167);
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+}
+input{
+    width: 450px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: none;
+    border: 1px rgba(110, 108, 108, 0.581) solid;
+    font-size: 25px;
+    padding-left: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+select{
+    border-radius: 50px;
+    height: 30px;
+    width: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.forgot-row{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+label{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+p{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

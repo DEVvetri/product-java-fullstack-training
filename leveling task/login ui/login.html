@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="google-signin-scope" content="profile email" />
+    <meta
+      name="google-signin-client_id"
+      content="MY_CLIENT_ID_ON_GOOGLE_DEV.apps.googleusercontent.com"
+    />
+    <!-- To integrate Google Sign-in -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="loginStyle.css" />
+  </head>
+  <body class="bodyc">
+    <div class="image-container" id="b"></div>
+    <div class="container">
+      <form action="">
+        <img
+          width="150px"
+          style="align-self: center; margin-bottom: 10px"
+          src="https://med-vista.vercel.app/assets/medVista_logo-CntXOFPR.png"
+          alt=""
+        />
+        <br />
+        <input type="email" placeholder="Email" />
+        <br />
+        <input type="password" placeholder="Password" />
+        <br />
+        <div class="gender-row">
+          <label for="">Gender:</label>
+          <select id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+          </select>
+        </div>
+
+        <div class="forgot-row">
+          <a href="">Forgot Password?</a>
+        </div>
+        <br />
+        <button type="submit" class="login-button">Log in</button>
+        <p style="color: rgb(118, 118, 118)">
+          Dont't hane an account? <a href="">Sign up</a>
+        </p>
+        <br />
+        <button class="other-button apple-temp" type="submit">
+          <img width="30px" src="apple.png" alt="" />
+          Log in with Apple</button
+        ><br />
+        <button class="other-button google-temp" type="submit">
+          <img width="30px" src="search.png" alt="" />
+          Log in with Google</button
+        ><br />
+      </form>
+    </div>
+    <script>
+      const url = "https://med-vista.vercel.app/assets/female_doc-pnVZjHUO.png";
+      const gender = document.getElementById("gender");
+      var body = document.getElementById("b");
+
+      gender.addEventListener("change", function () {
+        var values = gender.value;
+        var text = gender.options[gender.selectedIndex].text;
+        console.log(text);
+        if (text === "Female") {
+          body.classList.remove("add-boy");
+          body.classList.add("add-girl");
+          console.log("yes girl");
+        } else {
+          body.classList.remove("add-girl");
+          console.log("yes boy");
+          body.classList.add("add-boy");
+        }
+      });
+    </script>
+  </body>
+</html>
