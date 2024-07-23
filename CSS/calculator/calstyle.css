@@ -1,0 +1,43 @@
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cal-body{
+    display: grid;
+    width: 430px;
+    border-radius: 10px;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: repeat(6,100px);
+    background-color: rgb(96, 107, 116);
+    border: 10px solid rgb(96, 107, 116);;
+    gap: 10px;
+    ;
+}
+
+.cal-header{
+grid-column: span 4;
+}
+.cal-button{
+    background-color: rgb(100, 212, 212);
+    border-radius: 10px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    border: 3px solid black;
+}
+input{
+    width: 98%;
+    height: 98%;
+    margin: 0px;
+    border-radius: 15px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.897);
+    font-size: 35px;
+    font-weight: bold;
+}

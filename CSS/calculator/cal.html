@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="calstyle.css" />
+  </head>
+  <body>
+     <div class="container">
+          <div class="cal-body">
+               <div class="cal-header">
+                 <input type="text" id="feild">
+               </div>
+              <button type="submit" class="cal-button" onclick="send('C')">
+                 C
+              </button>
+              <button type="submit" class="cal-button" onclick="send('%')">
+         %
+              </button>
+              <button type="submit" class="cal-button" onclick="send('<=')">
+          <=
+              </button>
+              <button type="submit" class="cal-button" onclick="send('/')">
+         /
+              </button>
+              <button type="submit" class="cal-button" onclick="send(7)">
+         7
+              </button>
+              <button type="submit" class="cal-button" onclick="send(8)">
+         8
+              </button>
+              <button type="submit" class="cal-button" onclick="send(9)">
+         9
+              </button>
+              <button type="submit" class="cal-button" onclick="send('*')">
+         *
+              </button>
+              <button type="submit" class="cal-button" onclick="send(4)">
+         4
+              </button>
+              <button type="submit" class="cal-button" onclick="send(5)">
+         5
+              </button>
+              <button type="submit" class="cal-button" onclick="send(6)">
+         6
+              </button>
+              <button type="submit" class="cal-button" onclick="send('-')">
+         -
+              </button>
+              <button type="submit" class="cal-button" onclick="send(1)">
+         1
+              </button>
+              <button type="submit" class="cal-button" onclick="send(2)">
+         2
+              </button>
+              <button type="submit" class="cal-button" onclick="send(3)">
+         3
+              </button>
+              <button type="submit" class="cal-button" onclick="send('+')">
+         +
+              </button>
+              <button type="submit" class="cal-button" onclick="send('00')">
+         00
+              </button>
+              <button type="submit" class="cal-button" onclick="send('0')">
+         0
+              </button>
+              <button type="submit" class="cal-button" onclick="send('.')">
+         .
+              </button>
+              <button type="submit" class="cal-button" onclick="send('=')">
+         =
+              </button>
+               </div>
+             </div>
+     </div>
+    
+  </body>
+  <script>
+    var inputF=document.getElementById("feild");
+    var feildValu="";
+    var istogle=false;
+    function clear(){
+        inputF.value="";
+    }
+
+    function send(value){
+        if (value==="C") {
+            clear();
+        } else {
+            if (value) {
+                
+            } else {
+                
+            }
+            inputF.value+=value;
+        }
+    }
+  </script>
+</html>
