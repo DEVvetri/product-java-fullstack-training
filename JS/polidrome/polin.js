@@ -27,9 +27,12 @@ function checking() {
 }
 function clear() {
   let iltag = document.querySelector("ol");
-  let node = iltag.lastElementChild;
+  let node = iltag.lastElementChild();
   while (node) {
     iltag.removeChild(node);
-    node = iltag.lastElementChild;
+    console.log(node)
+    node = iltag.lastElementChild();
+    
   }
+  
 }

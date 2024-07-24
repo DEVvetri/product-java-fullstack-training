@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FT</title>
+  </head>
+  <body>
+    Enter the Number <input type="text" id="b1" /> <br /><br />
+    <button onclick="fact()">Factorial</button>
+    <h1 id="result"></h1>
+    <script>
+      const fact = () => {
+        let n = parseInt(document.getElementById("b1").value);
+        let res = "<table border ='1' width='50%'>";
+        res += "<tr><th>Number</th><th>Factorial</th></tr>";
+        for (let j = 1; j <= n; j++) {
+          var total = 1;
+          for (let i = 1; i <= j; i++) {
+            total *= i;
+          }
+          res += "<tr><td>" + j + "</td><td>" + total + "</td></tr>";
+        }
+        res += "</table>";
+        document.getElementById("result").innerHTML = res;
+      };
+    </script>
+  </body>
+</html>
