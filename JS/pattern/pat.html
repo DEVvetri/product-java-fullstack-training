@@ -18,9 +18,9 @@
       const cont = document.getElementById("cont");
       const feild = document.getElementById("feild");
       cont.innerHTML = "";
-      for (let i = 0; i < feild.value; i++) {
+      for (let i = 1; i <= feild.value; i++) {
         var word = "";
-        for (let j = 0; j < i; j++) {
+        for (let j = 1; j <= i; j++) {
           word += "* ";
         }
         cont.innerHTML += word + "<br>";
