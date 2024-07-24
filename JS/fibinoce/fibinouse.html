@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>check polindrom</h1>
+      </div>
+      <div class="box">
+        <input type="text" id="feild" placeholder="Enter number" />
+        <button type="submit" onclick="fibifincd()">
+          <span>Check</span>
+        </button>
+        <!-- <button type="submit" onclick="clear()">
+          <span>clear</span>
+        </button> -->
+      </div>
+      <div class="result-area">
+        <h1 id="result"></h1>
+      </div>
+    </div>
+  </body>
+  <script>
+    function fibifincd() {
+      var n = document.getElementById("feild");
+      let p = document.getElementById("result");
+      let f1 = 0;
+      let f2 = 1;
+      var arr = [0, 1];
+      for (let i = 0; i < n.value - 2; i++) {
+        let result = f1 + f2;
+        f1 = f2;
+        f2 = result;
+        arr.push(result);
+      }
+      let word = "";
+      arr.forEach((element) => {
+        word += ""+element+" ";
+      });
+      p.innerHTML = word;
+      console.log(word);
+    }
+  </script>
+</html>

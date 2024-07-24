@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>check fact</h1>
+      </div>
+      <div class="box">
+        <input type="text" id="feild" placeholder="Enter number" />
+        <button type="submit" onclick="fact()">
+          <span>get</span>
+        </button>
+        <!-- <button type="submit" onclick="clear()">
+          <span>clear</span>
+        </button> -->
+      </div>
+      <div class="result-area">
+        <h1 id="result"></h1>
+      </div>
+    </div>
+  </body>
+  <script>
+    function fact() {
+      var n = document.getElementById("feild");
+      let p = document.getElementById("result");
+
+      var total = 1;
+      for (let i = 1; i <= n.value; i++) {
+        total *= i;
+      }
+      console.log(total);
+      p.innerHTML = total;
+      console.log(total);
+    }
+  </script>
+</html>

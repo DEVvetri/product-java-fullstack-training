@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pattern</title>
+  </head>
+  <body>
+    <h1>Pattern</h1>
+
+    <input type="number" id="feild" placeholder="Enter row count" />
+    <button onclick="gen()">generate</button>
+    <h1 id="cont"></h1>
+  </body>
+  <script>
+    function gen() {
+     
+      const cont = document.getElementById("cont");
+      const feild = document.getElementById("feild");
+      cont.innerHTML = "";
+      for (let i = 0; i < feild.value; i++) {
+        var word = "";
+        for (let j = 0; j < i; j++) {
+          word += "* ";
+        }
+        cont.innerHTML += word + "<br>";
+      }
+    }
+  </script>
+</html>

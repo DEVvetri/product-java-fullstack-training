@@ -9,8 +9,10 @@
   <body>
      <div class="container">
           <div class="cal-body">
+               <input type="text" id="total" disabled>
                <div class="cal-header">
-                 <input type="text" id="feild">
+                 <input type="text" id="feild" disabled>
+                 
                </div>
               <button type="submit" class="cal-button" onclick="send('C')">
                  C
@@ -24,37 +26,37 @@
               <button type="submit" class="cal-button" onclick="send('/')">
          /
               </button>
-              <button type="submit" class="cal-button" onclick="send(7)">
+              <button type="submit" class="cal-button" onclick="send('7')">
          7
               </button>
-              <button type="submit" class="cal-button" onclick="send(8)">
+              <button type="submit" class="cal-button" onclick="send('8')">
          8
               </button>
-              <button type="submit" class="cal-button" onclick="send(9)">
+              <button type="submit" class="cal-button" onclick="send('9')">
          9
               </button>
               <button type="submit" class="cal-button" onclick="send('*')">
          *
               </button>
-              <button type="submit" class="cal-button" onclick="send(4)">
+              <button type="submit" class="cal-button" onclick="send('4')">
          4
               </button>
-              <button type="submit" class="cal-button" onclick="send(5)">
+              <button type="submit" class="cal-button" onclick="send('5')">
          5
               </button>
-              <button type="submit" class="cal-button" onclick="send(6)">
+              <button type="submit" class="cal-button" onclick="send('6')">
          6
               </button>
               <button type="submit" class="cal-button" onclick="send('-')">
          -
               </button>
-              <button type="submit" class="cal-button" onclick="send(1)">
+              <button type="submit" class="cal-button" onclick="send('1')">
          1
               </button>
-              <button type="submit" class="cal-button" onclick="send(2)">
+              <button type="submit" class="cal-button" onclick="send('2')">
          2
               </button>
-              <button type="submit" class="cal-button" onclick="send(3)">
+              <button type="submit" class="cal-button" onclick="send('3')">
          3
               </button>
               <button type="submit" class="cal-button" onclick="send('+')">
@@ -78,24 +80,65 @@
     
   </body>
   <script>
-    var inputF=document.getElementById("feild");
-    var feildValu="";
-    var istogle=false;
-    function clear(){
+     var inputF=document.getElementById("feild");
+     var totalF= document.getElementById("total");
+     var isfinal=true;
+   
+     function clear(){
         inputF.value="";
+     
+     }
+     console.log(total.length)
+     function send(value){
+               if(value=="C") {
+                    clear(); 
+               }
+               else if(value==="="){
+                    isfinal=false
+                    inputF.value=totalF.value;
+                    totalF.value=" ";
+               }else if (value==="%") {
+                    clear();
+               }else if (value==="+") {
+                    spoce="+";
+                    inputF.value+=value;
+               }else if (value==="-") {
+                    spoce="-";
+                    inputF.value+=value;
+               }else if (value==="/") {
+                    spoce="/";
+                    inputF.value+=value;
+               }else if (value=="<=") {
+                    spoce="<=";
+                    var temp=inputF.value;
+                    inputF.value=temp.substring(0,temp.length-1);
+               }
+              else{
+                    cal;
+                    inputF.value+=value;
+                   
+              }
+    }
+    function clearFeild(){
+     inputF.value="";
     }
 
-    function send(value){
-        if (value==="C") {
-            clear();
-        } else {
-            if (value) {
-                
-            } else {
-                
-            }
-            inputF.value+=value;
-        }
+     var cal= setInterval(() => {
+          calculate();
+     }, 100);
+    function calculate(){
+  
+     const result = eval(inputF.value);
+
+     if (inputF.value.length!=0) {
+      
+          document.getElementById("total").value=result;
+    
+     } else {
+          document.getElementById("total").value="";
+     }
+     isfinal=true;
     }
+    
   </script>
 </html>

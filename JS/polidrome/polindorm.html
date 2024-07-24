@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="polistyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>check polindrom</h1>
+      </div>
+      <div class="box">
+        <input type="text" id="feild" placeholder="Enter your string"/>
+        <button type="submit" onclick="checking()">
+          <span>Check</span>
+        </button>
+        <!-- <button type="submit" onclick="clear()">
+          <span>clear</span>
+        </button> -->
+      </div>
+      <div class="result-area">
+        <ol id="result"></ol>
+      </div>
+    </div>
+  </body>
+  <script>
+    var word = document.getElementById("feild");
+    var result = document.getElementById("result");
+    const li = document.createElement("li");
+    function checking() {
+      var ispoli = false;
+      for (let i = 0; i < word.value.length; i++) {
+        let first = word.value.charAt(i);
+        let last = word.value.charAt(word.value.length - 1 - i);
+        if (first === last) {
+          ispoli = true;
+        } else {
+          ispoli = false;
+          break;
+        }
+      }
+      if (ispoli) {
+        li.textContent = word.value + " yes polindrom";
+        result.appendChild(li);
+      } else {
+        const li = document.createElement("li");
+        li.textContent = word.value + " no polindrom";
+        result.appendChild(li);
+        console.log("no");
+      }
+    }
+    function clear() {
+      let iltag = document.querySelector("ol");
+      let node = iltag.lastElementChild;
+      while (node) {
+        iltag.removeChild(node);
+        node = iltag.lastElementChild;
+      }
+    }
+  </script>
+</html>

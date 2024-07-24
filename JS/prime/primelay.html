@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="polistyle.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>check prime</h1>
+      </div>
+      <div class="box">
+        <input type="text" id="feild" placeholder="Enter your string" />
+        <button type="submit" onclick="checking()">
+          <span>Check</span>
+        </button>
+        <!-- <button type="submit" onclick="clear()">
+          <span>clear</span>
+        </button> -->
+      </div>
+      <div class="result-area">
+        <ol id="result"></ol>
+      </div>
+    </div>
+  </body>
+  <script>
+    var word = document.getElementById("feild");
+    var result = document.getElementById("result");
+    const li = document.createElement("li");
+    function checking() {
+      var n = word.value;
+      var isprime = false;
+      for (let i = 2; i < n; i++) {
+        if (n % 2 != 0) {
+          isprime = true;
+        } else {
+          isprime = false;
+          break;
+        }
+      }
+
+      if (isprime) {
+        li.textContent = word.value + " yes prime";
+        result.appendChild(li);
+      } else {
+        const li = document.createElement("li");
+        li.textContent = word.value + " not prime";
+        result.appendChild(li);
+        console.log("no");
+      }
+    }
+  </script>
+</html>

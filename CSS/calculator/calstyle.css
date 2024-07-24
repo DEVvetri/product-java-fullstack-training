@@ -22,6 +22,20 @@
 .cal-header{
 grid-column: span 4;
 }
+#total{
+    position: absolute;
+    opacity: 0.6;
+    width:420px;
+    height: 5%;
+    margin-top: 60px;
+    border: none;
+    background-color: transparent;
+    text-align: end;
+    padding-left: 5px;
+}
+#total:focus{
+    outline: none;
+}
 .cal-button{
     background-color: rgb(100, 212, 212);
     border-radius: 10px;

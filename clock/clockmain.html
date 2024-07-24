@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="clockstyle.css" />
+    <script>
+      setInterval(myTimer, 1000);
+
+      function myTimer() {
+        document.getElementById("demo").innerHTML = Date().toString().split(" ")[4];
+        document.getElementById("noon").innerHTML=Date().toString().split(" ")[4].split(":")[0]<12?"AM":"PM";
+    }
+    </script>
+  </head>
+  <body>
+    <div class="backgr">
+      <div class="clock-back">
+        <div class="clock">
+          <div class="timer-feild">
+            <h1 id="demo"></h1>
+          </div>
+          <h1 id="noon"></h1>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
