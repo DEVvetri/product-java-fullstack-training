@@ -9,15 +9,15 @@
   <body>
      <div class="container">
           <div class="cal-body">
-               <input type="text" id="total" disabled>
+               <input placeholder=" " type="text" id="total" disabled>
                <div class="cal-header">
-                 <input type="number" id="feild" >
+                 <input type="text" id="feild" disabled>
                  
                </div>
               <button  type="submit" class="cal-button" onclick="send('C')" >
                  C
               </button>
-              <button type="submit" class="cal-button" onclick="send('%')" disabled >
+              <button type="submit" class="cal-button" onclick="send('%')"  >
          %
               </button>
               <button type="submit" class="cal-button" onclick="send('<=')">
@@ -81,27 +81,31 @@
   </body>
   <script>
      var inputF=document.getElementById("feild");
-     var totalF= document.getElementById("total");
-     var isfinal=false;;
-   
+     const totalF= document.getElementById("total");
+     var isfinal=true
      function clear(){
         inputF.value="";
      
      }
-     console.log(total.length)
      function send(value){
+          if(isfinal==false){
+               clear();
+               isfinal=true
+               
+          }
                if(value=="C") {
                     clear(); 
                }
                else if(value==="="){
-                    isfinal=true
+                    isfinal=false
                     inputF.value=totalF.value;
                     totalF.value=" ";
                }else if (value==="%") {
-                    clear();
+                    // inputF.value+= value;
+                    clear(); 
                }else if (value==="+") {
                     spoce="+";
-                    inputF.value+=value;
+                    inputF.value+= value;
                }else if (value==="-") {
                     spoce="-";
                     inputF.value+=value;
@@ -114,30 +118,27 @@
                     inputF.value=temp.substring(0,temp.length-1);
                }
               else{
-                    cal;
+               
                     inputF.value+=value;
                    
               }
     }
-    function clearFeild(){
-     inputF.value="";
-    }
-
-     var cal= setInterval(() => {
+     setInterval(() => {
           calculate();
      }, 10);
+
     function calculate(){
   
      const result = eval(inputF.value);
 
-     if (inputF.value.length!=0) {
+     if (inputF.value.length!=0 &&isfinal==true) {
       
           document.getElementById("total").value=result;
     
      } else {
           document.getElementById("total").value="";
      }
-     isfinal=true;
+  
     }
     
   </script>

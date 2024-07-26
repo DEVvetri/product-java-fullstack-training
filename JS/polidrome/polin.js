@@ -34,5 +34,8 @@ function clear() {
     node = iltag.lastElementChild();
     
   }
+  var arr=[]
+  arr.map()
+  
   
 }
