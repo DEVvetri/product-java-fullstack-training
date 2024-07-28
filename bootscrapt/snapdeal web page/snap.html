@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Snapdeal online shopping</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="shortcut icon" href="https://th.bing.com/th?id=OIP.Wy5K0gUx68SShJ-JjvqsOgHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.1&pid=3.1&rm=2" type="image/x-icon">
+    <link rel="stylesheet" href="snapdealstyle.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <header class="pin">
+      <div
+        class="container-fluid d-flex flex-row justify-content-between align-content-center g-0 px-5 text-light"
+        style="height: 30px; background-color: #c7003d; font-size: 15px;padding-top: 5px;"
+      >
+        <div>
+          <p>Brand Waali Quality, Bazaar Waali Deal!</p>
+        </div>
+        <div class="coontainer d-flex gap-5">
+          <p>Impact@Snapdeal</p>
+          <p>Help Center</p>
+          <p>Sell On Snapdeal</p>
+          <p>Download App</p>
+          <p>Donate For Elderly</p>
+        </div>
+      </div>
+      <div
+      id="pined-header"
+        class="container-fluid d-flex flex-row justify-content-between align-content-center g-0 px-5 bg-danger "
+      >
+        <img
+          class="navbar-brand"
+          src="https://i3.sdlcdn.com/img/snapdeal/darwin/logo/sdLatestLogo.svg"
+          alt=""
+        />
+
+        <div class="input-group mb-3 w-50 m-3 ">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Search products & brands"
+            aria-label="Recipient's username"
+            aria-describedby="basic-addon2"
+          />
+          <button
+            type="button"
+            class="btn btn-secondary bg-black border border-0 input-group-text"
+          >
+          <i class="bi bi-search"></i>
+            Search
+          </button>
+        </div>
+        <div
+          class="btn-group btn-group-lg"
+          role="group"
+          aria-label="Large button group"
+        >
+          <button type="button" class="btn btn text-light">
+            Cart<i class="bi bi-cart3 profil"></i>
+          </button>
+          <button type="button" class="btn btn text-light d-flex flex-row align-items-center" id="sign">
+            Sign in
+            <div class="mx-2" style="width: 30px;height: 30px;background-color: black; display: flex;flex-direction: column;justify-content: center;align-items: center;border-radius: 50PX;">
+              
+            <i
+            class="bi bi-person-fill profil rounded-circle p-1 mx-2"
+           ></i>
+            </div>
+            <div class="hidded-login" style="font-size:15px ; padding-top: 20px;">
+              <p style="cursor: pointer; padding-top: 0px;margin:0px ;"><i class="bi bi-person me-2"></i>Your Account</p>
+              <p style="cursor: pointer; padding-top: 10px;padding-bottom:10px;"><i class="bi bi-box me-2"></i>Your orders</p>
+              <hr style="margin:0px ;">
+              <p style="font-size: smaller;margin: 0px;padding-bottom: 10px;">
+                if you are a new user
+              </p>
+              <p style="cursor: pointer; padding: 0px; margin:0px ;">
+                Register
+              </p>
+              <h5 class="login-btn">Login</h5>
+            </div>
+          </button>
+          
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid  w-100">
+        <div>
+          <div class="row">
+            <div class="col  m-3">
+             
+              <div class="list-group shadow-lg">
+                <button
+                  type="button" id="side-btn"
+                  class="list-group-item list-group-item-action fw-bold border border-0  "
+                  aria-current="true"
+                  disabled
+                >
+                
+                  TOP CATEGORY
+                </button>
+                <button
+                  type="button" id="side-btn"
+                  class="list-group-item list-group-item-action d-flex gap-3 border border-0 "
+                >
+                <div class="hover-table">
+                  <div class="hover-table-col">
+                    <h4>ETHNIC WEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Sarees</p>
+                      <p class="m-0">Kurtas & Kurtis</p>
+                      <p  class="m-0">Lehengas</p>
+                      <p  class="m-0">Salwar Suits</p>
+                      <p  class="m-0"> Salwars & Leggings</p>
+                      <p  class="m-0">Blouses & Petticoats</p>
+                      <p class="text-info m-0">View All></p>
+                    </div>
+            
+                    <h4>FOOTWEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Heels</p>
+                      <p  class="m-0">Flats & Sandals</p>
+                      <p  class="m-0">Slippers & Flip Flops</p>
+                      <p  class="m-0">Ballerinas</p>
+                      <p  class="m-0">Casual Shoes</p>
+                      <p  class="m-0">Sports Shoes</p>
+                      <p  class="m-0">Ethnic Footwear</p>
+                      <p  class="m-0">Floater Sandal</p>
+                      <p class="text-primary m-0">View All></p>
+                    </div>
+                    <h4>PERFUMES & FRAGRANCES</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Perfumes</p>
+                      <p  class="m-0">Deodorants</p>
+                    </div>
+                  </div>
+                  <div class="hover-table-col">
+                    <h4>ETHNIC WEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Sarees</p>
+                      <p  class="m-0">Kurtas & Kurtis</p>
+                      <p  class="m-0">Lehengas</p>
+                      <p  class="m-0">Salwar Suits</p>
+                      <p  class="m-0">Salwars & Leggings</p>
+                      <p  class="m-0">Blouses & Petticoats</p>
+                      <p class="text-primary m-0">View All></p>
+                    </div>
+            
+                    <h4>FOOTWEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Heels</p>
+                      <p  class="m-0">Flats & Sandals</p>
+                      <p  class="m-0">Slippers & Flip Flops</p>
+                      <p  class="m-0">Ballerinas</p>
+                      <p  class="m-0">Casual Shoes</p>
+                      <p  class="m-0">Sports Shoes</p>
+                      <p  class="m-0">Ethnic Footwear</p>
+                      <p  class="m-0">Floater Sandal</p>
+                      <p class="text-primary">View All></p>
+                    </div>
+                    <h4>PERFUMES & FRAGRANCES</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Perfumes</p>
+                      <p  class="m-0">Deodorants</p>
+                    </div>
+                  </div>
+                  <div class="hover-table-col border border-0">
+                    <h4>ETHNIC WEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Sarees</p>
+                      <p  class="m-0">Kurtas & Kurtis</p>
+                      <p  class="m-0">Lehengas</p>
+                      <p  class="m-0">Salwar Suits</p>
+                      <p  class="m-0">Salwars & Leggings</p>
+                      <p  class="m-0">Blouses & Petticoats</p>
+                      <p class="text-primary m-0">View All></p>
+                    </div>
+            
+                    <h4>FOOTWEAR</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Heels</p>
+                      <p  class="m-0">Flats & Sandals</p>
+                      <p  class="m-0">Slippers & Flip Flops</p>
+                      <p  class="m-0">Ballerinas</p>
+                      <p  class="m-0">Casual Shoes</p>
+                      <p  class="m-0">Sports Shoes</p>
+                      <p  class="m-0">Ethnic Footwear</p>
+                      <p  class="m-0">Floater Sandal</p>
+                      <p class="text-primary m-0">View All></p>
+                    </div>
+                    <h4>PERFUMES & FRAGRANCES</h4>
+                    <div class="ps-2">
+                      <p  class="m-0">Perfumes</p>
+                      <p  class="m-0">Deodorants</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="profile"></div>
+                  A second button item1
+                </button>
+            </button>
+            <button
+              type="button" id="side-btn"
+              class="list-group-item list-group-item-action d-flex gap-3 border border-0"
+            >
+            <div class="hover-table">
+              <div class="hover-table-col">
+                <h4>ETHNIC WEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Sarees</p>
+                  <p class="m-0">Kurtas & Kurtis</p>
+                  <p  class="m-0">Lehengas</p>
+                  <p  class="m-0">Salwar Suits</p>
+                  <p  class="m-0"> Salwars & Leggings</p>
+                  <p  class="m-0">Blouses & Petticoats</p>
+                  <p class="text-info m-0">View All></p>
+                </div>
+        
+                <h4>FOOTWEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Heels</p>
+                  <p  class="m-0">Flats & Sandals</p>
+                  <p  class="m-0">Slippers & Flip Flops</p>
+                  <p  class="m-0">Ballerinas</p>
+                  <p  class="m-0">Casual Shoes</p>
+                  <p  class="m-0">Sports Shoes</p>
+                  <p  class="m-0">Ethnic Footwear</p>
+                  <p  class="m-0">Floater Sandal</p>
+                  <p class="text-primary m-0">View All></p>
+                </div>
+              
+              </div>
+              <div class="hover-table-col">
+                <h4>ETHNIC WEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Sarees</p>
+                  <p  class="m-0">Kurtas & Kurtis</p>
+                  <p  class="m-0">Lehengas</p>
+                  <p  class="m-0">Salwar Suits</p>
+                  <p  class="m-0">Salwars & Leggings</p>
+                  <p  class="m-0">Blouses & Petticoats</p>
+                  <p class="text-primary m-0">View All></p>
+                </div>
+        
+                <h4>FOOTWEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Heels</p>
+                  <p  class="m-0">Flats & Sandals</p>
+                  <p  class="m-0">Slippers & Flip Flops</p>
+                  <p  class="m-0">Ballerinas</p>
+                  <p  class="m-0">Casual Shoes</p>
+                  <p  class="m-0">Sports Shoes</p>
+                  <p  class="m-0">Ethnic Footwear</p>
+                  <p  class="m-0">Floater Sandal</p>
+                  <p class="text-primary">View All></p>
+                </div>
+               
+              </div>
+              <div class="hover-table-col border border-0">
+                <h4>ETHNIC WEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Sarees</p>
+                  <p  class="m-0">Kurtas & Kurtis</p>
+                  <p  class="m-0">Lehengas</p>
+                  <p  class="m-0">Salwar Suits</p>
+                  <p  class="m-0">Salwars & Leggings</p>
+                  <p  class="m-0">Blouses & Petticoats</p>
+                  <p class="text-primary m-0">View All></p>
+                </div>
+        
+                <h4>FOOTWEAR</h4>
+                <div class="ps-2">
+                  <p  class="m-0">Heels</p>
+                  <p  class="m-0">Flats & Sandals</p>
+                  <p  class="m-0">Slippers & Flip Flops</p>
+                  <p  class="m-0">Ballerinas</p>
+                  <p  class="m-0">Casual Shoes</p>
+                  <p  class="m-0">Sports Shoes</p>
+                  <p  class="m-0">Ethnic Footwear</p>
+                  <p  class="m-0">Floater Sandal</p>
+                  <p class="text-primary m-0">View All></p>
+                </div>
+                
+              </div>
+            </div>
+            <div class="profile">
+
+            </div>
+              A second button item
+            </button>
+        </button>
+        <button
+          type="button" id="side-btn"
+          class="list-group-item list-group-item-action d-flex gap-3 border border-0"
+        >
+        <div class="hover-table">
+          <div class="hover-table-col">
+            <h4>ETHNIC WEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Sarees</p>
+              <p class="m-0">Kurtas & Kurtis</p>
+              <p  class="m-0">Lehengas</p>
+              <p  class="m-0">Salwar Suits</p>
+              <p  class="m-0"> Salwars & Leggings</p>
+              <p  class="m-0">Blouses & Petticoats</p>
+              <p class="text-info m-0">View All></p>
+            </div>
+    
+            <h4>FOOTWEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Heels</p>
+              <p  class="m-0">Flats & Sandals</p>
+              <p  class="m-0">Slippers & Flip Flops</p>
+              <p  class="m-0">Ballerinas</p>
+              <p  class="m-0">Casual Shoes</p>
+              <p  class="m-0">Sports Shoes</p>
+              <p  class="m-0">Ethnic Footwear</p>
+              <p  class="m-0">Floater Sandal</p>
+              <p class="text-primary m-0">View All></p>
+            </div>
+           
+          </div>
+          <div class="hover-table-col">
+            <h4>ETHNIC WEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Sarees</p>
+              <p  class="m-0">Kurtas & Kurtis</p>
+              <p  class="m-0">Lehengas</p>
+              <p  class="m-0">Salwar Suits</p>
+              <p  class="m-0">Salwars & Leggings</p>
+              <p  class="m-0">Blouses & Petticoats</p>
+              <p class="text-primary m-0">View All></p>
+            </div>
+    
+            <h4>FOOTWEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Heels</p>
+              <p  class="m-0">Flats & Sandals</p>
+              <p  class="m-0">Slippers & Flip Flops</p>
+              <p  class="m-0">Ballerinas</p>
+              <p  class="m-0">Casual Shoes</p>
+              <p  class="m-0">Sports Shoes</p>
+              <p  class="m-0">Ethnic Footwear</p>
+              <p  class="m-0">Floater Sandal</p>
+              <p class="text-primary">View All></p>
+            </div>
+           
+          </div>
+          <div class="hover-table-col border border-0">
+            <h4>ETHNIC WEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Sarees</p>
+              <p  class="m-0">Kurtas & Kurtis</p>
+              <p  class="m-0">Lehengas</p>
+              <p  class="m-0">Salwar Suits</p>
+              <p  class="m-0">Salwars & Leggings</p>
+              <p  class="m-0">Blouses & Petticoats</p>
+              <p class="text-primary m-0">View All></p>
+            </div>
+    
+            <h4>FOOTWEAR</h4>
+            <div class="ps-2">
+              <p  class="m-0">Heels</p>
+              <p  class="m-0">Flats & Sandals</p>
+              <p  class="m-0">Slippers & Flip Flops</p>
+              <p  class="m-0">Ballerinas</p>
+              <p  class="m-0">Casual Shoes</p>
+              <p  class="m-0">Sports Shoes</p>
+              <p  class="m-0">Ethnic Footwear</p>
+              <p  class="m-0">Floater Sandal</p>
+              <p class="text-primary m-0">View All></p>
+            </div>
+           
+          </div>
+        </div>
+        
+        <div class="profile">
+
+        </div>
+          A second button item
+        </button>
+    </button>
+    <button
+      type="button" id="side-btn"
+      class="list-group-item list-group-item-action d-flex gap-3  border border-0"
+    >
+    <div class="hover-table">
+      <div class="hover-table-col">
+        <h4>ETHNIC WEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Sarees</p>
+          <p class="m-0">Kurtas & Kurtis</p>
+          <p  class="m-0">Lehengas</p>
+          <p  class="m-0">Salwar Suits</p>
+          <p  class="m-0"> Salwars & Leggings</p>
+          <p  class="m-0">Blouses & Petticoats</p>
+          <p class="text-info m-0">View All></p>
+        </div>
+
+        <h4>FOOTWEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Heels</p>
+          <p  class="m-0">Flats & Sandals</p>
+          <p  class="m-0">Slippers & Flip Flops</p>
+          <p  class="m-0">Ballerinas</p>
+          <p  class="m-0">Casual Shoes</p>
+          <p  class="m-0">Sports Shoes</p>
+          <p  class="m-0">Ethnic Footwear</p>
+          <p  class="m-0">Floater Sandal</p>
+          <p class="text-primary m-0">View All></p>
+        </div>
+       
+      </div>
+      <div class="hover-table-col">
+        <h4>ETHNIC WEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Sarees</p>
+          <p  class="m-0">Kurtas & Kurtis</p>
+          <p  class="m-0">Lehengas</p>
+          <p  class="m-0">Salwar Suits</p>
+          <p  class="m-0">Salwars & Leggings</p>
+          <p  class="m-0">Blouses & Petticoats</p>
+          <p class="text-primary m-0">View All></p>
+        </div>
+
+        <h4>FOOTWEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Heels</p>
+          <p  class="m-0">Flats & Sandals</p>
+          <p  class="m-0">Slippers & Flip Flops</p>
+          <p  class="m-0">Ballerinas</p>
+          <p  class="m-0">Casual Shoes</p>
+          <p  class="m-0">Sports Shoes</p>
+          <p  class="m-0">Ethnic Footwear</p>
+          <p  class="m-0">Floater Sandal</p>
+          <p class="text-primary">View All></p>
+        </div>
+        
+      </div>
+      <div class="hover-table-col border border-0">
+        <h4>ETHNIC WEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Sarees</p>
+          <p  class="m-0">Kurtas & Kurtis</p>
+          <p  class="m-0">Lehengas</p>
+          <p  class="m-0">Salwar Suits</p>
+          <p  class="m-0">Salwars & Leggings</p>
+          <p  class="m-0">Blouses & Petticoats</p>
+          <p class="text-primary m-0">View All></p>
+        </div>
+
+        <h4>FOOTWEAR</h4>
+        <div class="ps-2">
+          <p  class="m-0">Heels</p>
+          <p  class="m-0">Flats & Sandals</p>
+          <p  class="m-0">Slippers & Flip Flops</p>
+          <p  class="m-0">Ballerinas</p>
+          <p  class="m-0">Casual Shoes</p>
+          <p  class="m-0">Sports Shoes</p>
+          <p  class="m-0">Ethnic Footwear</p>
+          <p  class="m-0">Floater Sandal</p>
+          <p class="text-primary m-0">View All></p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="profile">
+
+    </div>
+      A second button item
+    </button>
+    <button disabled
+                  type="button"
+                  class="list-group-item list-group-item-action d-flex gap-3 border border-0 fw-bold "
+                >
+                MORE CATEGORIES
+                </button>
+                <p class="px-4" id="linking">Automotives</p>
+                <p class="px-4" id="linking">Mobile & Accessories</p>
+                <p class="px-4" id="linking">Electronics</p>
+                <p class="px-4" id="linking">Sports, Fitness & Outdoor</p>
+                <p class="px-4" id="linking">Computers & Gaming</p>
+                <p class="px-4" id="linking">Book,Media & Music</p>
+                <p class="px-4" id="linking">Hobbies</p>
+
+                <button disabled
+                  type="button"
+                  class="list-group-item list-group-item-action d-flex gap-3 border border-0 fw-bold "
+                >
+                MORE CATEGORIES
+                </button>
+                <p class="px-4" id="linking">   <i class="bi bi-search mx-2"></i>Automotives</p>
+                <p class="px-4" id="linking">   <i class="bi bi-search mx-2"></i>Mobile & Accessories</p>
+                <p class="px-4" id="linking">  <i class="bi bi-search mx-2"></i>Electronics</p>
+                <p class="px-4" id="linking">  <i class="bi bi-search mx-2"></i>Sports, Fitness & Outdoor</p>
+                <p class="px-4" id="linking">  <i class="bi bi-search mx-2"></i>Computers & Gaming</p>
+                <p class="px-4" id="linking">  <i class="bi bi-search mx-2"></i>Book,Media & Music</p>
+                <p class="px-4" id="linking">  <i class="bi bi-search mx-2"></i>Hobbies</p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="row ">
+                <div class="image-block col m-2">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                      
+                        <div class="carousel-indicators">
+                        
+
+                          <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                       
+                          <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                          <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 4"></button>
+                       
+                        </div>
+                        <div class="carousel-inner" >
+                          
+                          <div class="carousel-item active" data-bs-interval="1000">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/akull/AugArt24/Itel/Branddays/V1_1242x450.jpg" class="d-block w-100" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item" data-bs-interval="1000">
+                            <img
+                            src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Madhav/July/Apple/770.gif" class="d-block w-100" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item" data-bs-interval="1000">
+                            <img src="https://images-eu.ssl-images-amazon.com/images/G/31/img24/Wireless/Madhav/July/Apple/1242x450_2.gif" class="d-block w-100" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item" data-bs-interval="1000">
+                            <img style="height: 100%;" src="https://m.media-amazon.com/images/G/31/img24/Wireless/iQOObrandstore/WhatsApp_Image_2024-07-21_at_8.22.44_PM_1._CB569341046_.jpg" class="d-block w-100" alt="...">
+                            
+                          </div>
+                          <div class="carousel-item" data-bs-interval="1000">
+                            <img style="height: 100%;" src="https://m.media-amazon.com/images/G/31/img23/Wireless/Samsung/SamsungM/M35/BAU/21stGW/D142626032_IN_WLD_Samsung_M35-5G_Launch_catpage_1400x800_2._CB569335787_.jpg" class="d-block w-100" alt="...">
+                            
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon swiper-next " aria-hidden="true"></span>
+                     
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                          <span class="carousel-control-next-icon swiper-next" aria-hidden="true"></span>
+                        
+                        </button>
+                      </div>
+                </div>
+                <div class="right-container col-sm-2 me-3 my-2 g-0 rounded d-flex">
+                   
+                    <p class="placeholder-glow rounded" style="display: flex; flex: 1;">
+                        <span class="placeholder rounded" style="flex: 1;height: 320px;"></span>
+                      </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="main-container-body col my-2">
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      #Trending
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    class="product"
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://m.media-amazon.com/images/I/81CgtwSII3L._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      offer
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://m.media-amazon.com/images/I/81c50PU+lpL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      offer
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://m.media-amazon.com/images/I/61WZicN+coL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      1 left
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://t3.sdlcdn.com/imgs/k/k/v/large/JMA-Black-Rubber-Hybrid-Covers-SDL828978096-1-cad83.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-half ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card border rounded" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                   src="https://t4.sdlcdn.com/imgs/j/y/2/large/Tweakymod-3D-Back-Covers-For-SDL961120480-1-b8b39.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card border rounded" style="width: 14rem;">
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                   src="https://t4.sdlcdn.com/imgs/k/o/e/large/NBOX-Transparent-Silicon-Plain-Cases-SDL645899257-1-950ba.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-half ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card border rounded" style="width: 14rem;">
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                   src="https://m.media-amazon.com/images/I/71d1ytcCntL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-half ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      offer
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://m.media-amazon.com/images/I/51Zjp5fq1EL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      1 left
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                    src="https://m.media-amazon.com/images/I/81vxWpPpgNL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-half ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card border rounded" style="width: 14rem;">
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                      99+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                   src="https://m.media-amazon.com/images/I/81Z1scL6HvL._AC_UY327_FMwebp_QL65_.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <div class="card border rounded" style="width: 14rem;">
+                    <img
+                    height="270px"
+                    style="object-fit: fill;"
+                   src="https://t4.sdlcdn.com/imgs/k/o/e/large/NBOX-Transparent-Silicon-Plain-Cases-SDL645899257-1-950ba.webp" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <div class="d-flex align-content-center">
+                        <a href="#" class="btn btn-primary d-flex flex-row">Buy <strong class="ps-1">$199</strong></a>
+                        
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-fill ps-1 text-warning"></i>
+                        <i class="bi bi-star-half ps-1 text-warning"></i>
+                        <i class="bi bi-star ps-1 text-warning"></i>
+                      </div>
+                      
+                    </div>
+                  </div>
+                 
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="frow1">
+        <div class="box1"></div>
+        <div class="box2" style="font-size: 10px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-coin"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.5 9.511c.076.954.83 1.697 2.182 1.785V12h.6v-.709c1.4-.098 2.218-.846 2.218-1.932 0-.987-.626-1.496-1.745-1.76l-.473-.112V5.57c.6.068.982.396 1.074.85h1.052c-.076-.919-.864-1.638-2.126-1.716V4h-.6v.719c-1.195.117-2.01.836-2.01 1.853 0 .9.606 1.472 1.613 1.707l.397.098v2.034c-.615-.093-1.022-.43-1.114-.9zm2.177-2.166c-.59-.137-.91-.416-.91-.836 0-.47.345-.822.915-.925v1.76h-.005zm.692 1.193c.717.166 1.048.435 1.048.91 0 .542-.412.914-1.135.982V8.518z"
+            />
+            <path
+              d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"
+            />
+            <path
+              d="M8 13.5a5.5 5.5 0 1 1 0-11 5.5 5.5 0 0 1 0 11m0 .5A6 6 0 1 0 8 2a6 6 0 0 0 0 12"
+            />
+          </svg>
+          <div style="width: 1px; height: 15px"></div>
+          <h3 style="font-size: 20px; font-weight: bold" class="py-1">
+            100% SECURE PAYMENT
+          </h3>
+          <p class="m-0">Moving your card details to a much more</p>
+          <p>secured place</p>
+        </div>
+        <div class="box3" style="font-size: 10px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-shield-check"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M5.338 1.59a61 61 0 0 0-2.837.856.48.48 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.7 10.7 0 0 0 2.287 2.233c.346.244.652.42.893.533q.18.085.293.118a1 1 0 0 0 .101.025 1 1 0 0 0 .1-.025q.114-.034.294-.118c.24-.113.547-.29.893-.533a10.7 10.7 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.8 11.8 0 0 1-2.517 2.453 7 7 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7 7 0 0 1-1.048-.625 11.8 11.8 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 63 63 0 0 1 5.072.56"
+            />
+            <path
+              d="M10.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"
+            />
+          </svg>
+          <div style="width: 1px; height: 15px"></div>
+          <h3 style="font-size: 20px; font-weight: bold" class="py-1">
+            TRUSTPAY
+          </h3>
+          <p class="m-0">100% Payment Prodection Easy</p>
+          <p>Return Policy</p>
+        </div>
+        <div class="box4" style="font-size: 10px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-chat-text"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M2.678 11.894a1 1 0 0 1 .287.801 11 11 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8 8 0 0 0 8 14c3.996 0 7-2.807 7-6s-3.004-6-7-6-7 2.808-7 6c0 1.468.617 2.83 1.678 3.894m-.493 3.905a22 22 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a10 10 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9 9 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105"
+            />
+            <path
+              d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8m0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+          <div style="width: 1px; height: 15px"></div>
+          <h3 style="font-size: 20px; font-weight: bold" class="py-1">
+            HELP CENTER
+          </h3>
+          <p class="m-0">Got a question? Look no further</p>
+          <p>Browse our FAQs or submit your query here</p>
+        </div>
+        <div class="box5" style="font-size: 10px">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="40"
+            height="40"
+            fill="currentColor"
+            class="bi bi-phone"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"
+            />
+            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2" />
+          </svg>
+          <div style="width: 1px; height: 15px"></div>
+          <h3 style="font-size: 20px; font-weight: bold" class="py-1">
+            SHOP ON THE GO
+          </h3>
+          <p class="m-0">Dowload the app and get exciting</p>
+          <p>app only offer at your fingertips</p>
+        </div>
+        <div class="box6" style="font-size: 10px"></div>
+      </div>
+      <div class="frow2">
+        <div class="box1" style="font-size: 10px"></div>
+        <div class="box2" style="font-size: 10px">
+          <h3 style="font-size: 15px; font-weight: bold" class="py-2">
+            POLICY INFO
+          </h3>
+          <p class="m-1" id="linking">Privacy Policy</p>
+          <p class="m-1" id="linking">Terms of Sale</p>
+          <p class="m-1" id="linking">Terms of Use</p>
+          <p class="m-1" id="linking">Report Abuse & Takedown Policy</p>
+          <p class="m-1" id="linking">Know Your BIS Standard</p>
+          <p class="m-1" id="linking">
+            Products Under Cumpulsory BIS Certification
+          </p>
+          <p class="m-1" id="linking">FAQ</p>
+        </div>
+        <div class="box3" style="font-size: 10px">
+          <h3 style="font-size: 15px; font-weight: bold" class="py-2">
+            COMPANY
+          </h3>
+          <p class="m-1" id="linking">Impact@Snapdeal</p>
+          <p class="m-1" id="linking">Careers</p>
+          <p class="m-1" id="linking">Blog</p>
+          <p class="m-1" id="linking">Sitemap</p>
+          <p class="m-1" id="linking">Contact Us</p>
+        </div>
+        <div class="box4" style="font-size: 10px">
+          <h3 style="font-size: 15px; font-weight: bold" class="py-2">
+            SNAPDEAL BUSINESS
+          </h3>
+          <p class="m-1" id="linking">Shopping App</p>
+          <p class="m-1" id="linking">Sell on Snapdeal</p>
+          <p class="m-1" id="linking">Media Enquiries</p>
+        </div>
+        <div class="box5" style="font-size: 10px">
+          <h3 style="font-size: 15px; font-weight: bold" class="py-2">
+            POPULAR LINKS
+          </h3>
+          <p class="m-1" id="linking">Lehenga</p>
+          <p class="m-1" id="linking">Kid's Clothing</p>
+          <p class="m-1" id="linking">Sarees</p>
+          <p class="m-1" id="linking">Winter Wear</p>
+        </div>
+        <div class="box6" style="font-size: 10px">
+          <h3 style="font-size: 15px; font-weight: bold" class="py-2">
+            SUBSCRIBE
+          </h3>
+          <div class="input-group mb-3">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Your email address"
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-dark rounded-end"
+              type="button"
+              id="button-addon2"
+            >
+              SUBSCRIBE
+            </button>
+            <p style="font-size: 13px; margin-top: 10px; padding-right: 40px">
+              Register now to get updates on promotions and coupons.
+              <a href="">Or Download App</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="frow3">
+        <div class="box1" style="font-size: 10px">
+          <p style="font-size: 17px; flex: 1">PAYMENT</p>
+          <div
+            style="
+              flex: 3;
+              height: max-content;
+              width: min-content;
+              flex-direction: row;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <div
+              style="
+                width: 40px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: greenyellow;
+              "
+            ></div>
+            <div
+              style="
+                width: 40px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: greenyellow;
+              "
+            ></div>
+            <div
+              style="
+                width: 40px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: greenyellow;
+              "
+            ></div>
+            <div
+              style="
+                width: 40px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: greenyellow;
+              "
+            ></div>
+            <div
+              style="
+                width: 40px;
+                height: 30px;
+                border-radius: 5px;
+                background-color: greenyellow;
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="box2" style="font-size: 10px">
+          <p style="font-size: 17px; height: 20px">CONNECT</p>
+          <div
+            style="
+              height: max-content;
+              width: min-content;
+              flex-direction: row;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <div
+              style="
+                width: 35px;
+                height: 35px;
+                border-radius: 50px;
+                background-size: 100%;
+                object-fit: contain;
+                background-image: url('https://i4.sdlcdn.com/img/footer/facebook@4x.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i1.sdlcdn.com/img/footer/twitter@4x.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i4.sdlcdn.com/img/footer/instagram@4x.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i2.sdlcdn.com/img/footer/linkedin@4x.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i1.sdlcdn.com/img/footer/youtube@4x.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i4.sdlcdn.com/img/footer/Telegram-Logo_112x112.png');
+              "
+            ></div>
+            <div
+              style="
+                width: 35px;
+                height: 35px; background-size: 100%;
+                object-fit: contain;
+                border-radius: 50px;
+                background-image: url('https://i1.sdlcdn.com/img/footer/whatsapp-logo-112x112.png');
+              "
+            ></div>
+          </div>
+        </div>
+        <div class="box3"></div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
