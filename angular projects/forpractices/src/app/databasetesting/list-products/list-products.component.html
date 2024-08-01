@@ -1,0 +1,39 @@
+<p>list-products works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">City</th>
+    </tr>
+  </thead>
+  <tbody>
+
+      <tr *ngFor="let datas of mydata" >
+        <th scope="row" (click)="delete(datas.id)">{{ datas.id }}</th>
+        <td (click)="delete(datas.id)">{{ datas.name }}</td>
+        <td (click)="delete(datas.id)">{{ datas.age }}</td>
+        <td (click)="delete(datas.id)">{{ datas.city }}</td>
+      </tr>
+
+
+  </tbody>
+</table>
+<div class="d-flex flex-column w-25">
+  <div class="d-flex">
+    <input type="text" [value]="newname" [(ngModel)]="newname"/>
+    <h5>{{ newname }}</h5>
+  </div>
+  <div class="d-flex">
+    <input type="number" [value]="age" [(ngModel)]="age"/>
+    <h5>{{ age }}</h5>
+  </div>
+
+  <div class="d-flex">
+    <input type="text" [value]="city" [(ngModel)]="city"/>
+    <h5>{{ city }}</h5>
+  </div>
+</div>
+
+<button class="btn btn-success" (click)="addNew()">Add new</button>

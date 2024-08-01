@@ -1,0 +1,98 @@
+<div class="outter-container">
+  <div class="inner-container">
+    <div class="title-card">
+      <h1>Product Management</h1>
+    </div>
+    <div style="display: flex; flex: 1; flex-grow: 4">
+      <div class="data-entry-area">
+        <form>
+          <!-- <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label fw-bold"
+              >ID
+            </label>
+
+            <input
+              [value]="id"
+              type="number"
+              placeholder="enter empo id"
+              id="exampleInputEmail1"
+              class="form-control"
+              [(ngModel)]="id"
+              aria-describedby="emailHelp"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div> -->
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label fw-bold"
+              >Name</label
+            >
+            <input
+              type="text"
+              placeholder="enter empo name"
+              class="form-control"
+              id="exampleInputPassword1"
+              [value]="name"
+              [(ngModel)]="name"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label fw-bold"
+              >Salary</label
+            >
+            <input
+              type="number"
+              placeholder="enter empo salary"
+              class="form-control"
+              id="exampleInputPassword1"
+              [value]="salary"
+              [(ngModel)]="salary"
+              [ngModelOptions]="{ standalone: true }"
+            />
+          </div>
+          <div class="btn-group gap-2">
+            <button
+              type="submit"
+              class="btn btn-outline-success rounded"
+              (click)="getEmpo()"
+       
+            >
+              Save
+            </button>
+            <button
+              type="submit"
+              class="btn btn-outline-primary rounded"
+
+              (click)="updateEmpo()"
+            >
+              Update
+            </button>
+
+          </div>
+        </form>
+      </div>
+      <div class="data-listing-area">
+        <h4>Employee List</h4>
+
+        <hr style="width: 100%; color: black" />
+        <table style="width: 100%" border="2">
+          <tr>
+            <th>ID</th>
+            <th>NAME</th>
+            <th>SALARY</th>
+          </tr>
+
+          <tr *ngFor="let data of empList">
+            <td>{{ data.pid }}</td>
+            <td>{{ data.pname }}</td>
+            <td>{{ data.psalary }}</td>
+            <td><i class="bi bi-pen" (click)="updateTogglor(data.pid)"></i></td>
+            <td>
+              <i class="bi bi-x-lg" (click)="removeEmpo(data.pid)"></i>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

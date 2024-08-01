@@ -1,0 +1,132 @@
+<div class="container py-1">
+  <h2 class="col-12 d-flex py-3 justify-content-center text-primary">
+    You are in Updating Page
+  </h2>
+  <form class="row g-3">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label fw-bold">Product Name</label>
+      <input
+        type="text"
+        class="form-control border-black border border-1 border-opacity-25"
+        id="name"
+        [value]="updateproduct.productName"
+        [(ngModel)]="updateproduct.productName"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="col-md-6">
+      <label for="inputPassword4" class="form-label fw-bold"
+        >Product Image url</label
+      >
+      <input
+        type="text"
+        class="form-control border-black border border-1 border-opacity-25"
+        id="url"
+        [value]="updateproduct.productImage"
+        [(ngModel)]="updateproduct.productImage"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="col-12">
+      <div class="mb-3">
+        <label for="inputPassword4" class="form-label fw-bold"
+          >Product Description</label
+        >
+        <textarea
+          class="form-control border-black border border-1 border-opacity-25"
+          id="content"
+          rows="3"
+          [value]="updateproduct.productContent"
+          [(ngModel)]="updateproduct.productContent"
+          [ngModelOptions]="{ standalone: true }"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label fw-bold">Cetegory</label>
+      <input
+        type="text"
+        class="form-control border-black border border-1 border-opacity-25"
+        id="cetegory"
+        [value]="updateproduct.productCategory"
+        [(ngModel)]="updateproduct.productCategory"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="col-md-4">
+      <label for="inputCity" class="form-label fw-bold">Price</label>
+      <input
+        type="text"
+        class="form-control border-black border border-1 border-opacity-25"
+        aria-label="State"
+        id="price"
+        [value]="updateproduct.productPrice"
+        [(ngModel)]="updateproduct.productPrice"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+    <div class="col-md-2">
+      <label for="inputCity" class="form-label fw-bold">Rating</label>
+      <input
+        type="text"
+        class="form-control border-black border border-1 border-opacity-25"
+        id="rate"
+        [value]="updateproduct.productRating"
+        [(ngModel)]="updateproduct.productRating"
+        [ngModelOptions]="{ standalone: true }"
+      />
+    </div>
+
+    <div class="col-12 d-flex justify-content-center">
+      <!-- <button type="submit" class="btn btn-primary flex-grow-1" (click)="updateProduct() ">Update</button> -->
+      <a
+        type="button"
+        class="btn btn-primary flex-grow-1"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Update
+      </a>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-danger-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Warning!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">are you sure to Update this content?</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                routerLink="/"
+                class="btn btn-danger"
+                (click)="updateProduct()"
+                data-bs-dismiss="modal"
+                >Update</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

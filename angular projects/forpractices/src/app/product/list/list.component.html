@@ -1,0 +1,96 @@
+<div class="d-flex flex-row flex-wrap gap-3 my-4 justify-content-around" >
+  <div
+    class="card"
+    style="width: 18rem; cursor: pointer"
+    *ngFor="let data of globalClass.products"
+  >
+    <a routerLink="/view/{{ data.productId }}">
+      <img
+        height="200px"
+        src="{{ data.productImage }}"
+        class="card-img-top p-1 bg-transparent"
+        alt="image not loaded"
+      />
+    </a>
+
+    <div class="card-body">
+      <h5 class="card-title">{{ data.productName }}</h5>
+      <p
+        class="card-text"
+        style="height: 90px; text-overflow: ellipsis; overflow: hidden"
+      >
+        {{ data.productContent }}
+      </p>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item d-flex gap-3">
+        <b>Rating:</b>
+        <div *ngFor="let element of generateStar(data.productRating)">
+          <i class="bi bi-star-fill"></i>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <b>Cetegory:</b> {{ data.productCategory }}
+      </li>
+      <li class="list-group-item"><b>price:</b> {{ data.productPrice }}</li>
+    </ul>
+    <div class="card-body d-flex align-items-center justify-content-between">
+      <a
+        type="button"
+        class="btn btn-outline-danger"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        Delete
+      </a>
+
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-danger-subtle">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Warning!</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">are you sure to delete this content?</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <a
+                href="#"
+                class="btn btn-danger"
+                (click)="deleteProduct(data.productId)"
+                data-bs-dismiss="modal"
+                >Sure</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-outline-info" (click)="addcart(data)">
+        Add Cart
+      </button>
+      <a
+
+        class="btn btn-outline-success"
+        routerLink="/update/{{ data.productId }}"
+        >Update</a
+      >
+    </div>
+  </div>
+</div>

@@ -1,0 +1,100 @@
+<div
+  class="d-flex bg-primary flex-column align-items-center"
+  style="height: 90vh; padding-bottom: 70px; position: relative"
+>
+  <i
+    *ngIf="currentIdleft()"
+    class="bi bi-chevron-left"
+    style="
+      position: absolute;
+      top: 225px;
+      left: 150px;
+      font-size: 50px;
+      opacity: 0.5;
+    "
+    routerLink="/view/{{ viewproduct.productId - 1 }}"
+  ></i>
+
+  <i
+    *ngIf="currentIdRight()"
+    class="bi bi-chevron-right"
+    style="
+      position: absolute;
+      top: 225px;
+      right: 150px;
+      font-size: 50px;
+      opacity: 0.5;
+    "
+    routerLink="/view/{{ viewproduct.productId + 1 }}"
+  ></i>
+  <h3 class="align-self-center text-primary">Your in View page</h3>
+  <div class="container flex-grow-1 d-flex justify-content-center">
+    <div class="row d-flex" style="width: 1000px; justify-content: center">
+      <div
+        class="col-1 d-flex flex-column glassified-img justify-content-center rounded-start-5"
+        style="width: 400px"
+      >
+        <!-- imagea area -->
+        <img
+          src="{{ viewproduct.productImage }}"
+          class="img-fluid align-self-center rounded"
+          alt="..."
+        />
+      </div>
+      <div
+        class="col d-flex flex-column rounded-end-5 glassified justify-content-end"
+        style="width: 400px; padding-top: 15px"
+      >
+        <!-- details area -->
+        <div
+          class="container-fluid d-flex justify-content-between px-3 align-content-center"
+        >
+          <h4 class="text-light">{{ viewproduct.productName }}</h4>
+          <div class="d-flex gap-2">
+            <b class="text-light">Rating:</b>
+            <div
+              *ngFor="let element of generateStar(viewproduct.productRating)"
+            >
+              <i class="bi bi-star-fill text-light"></i>
+            </div>
+          </div>
+        </div>
+        <div
+          class="container flex-grow-1"
+          style="padding-top: 10px; color: black; font-size: 17px; margin: 0px"
+        >
+          <p>{{ viewproduct.productContent }}</p>
+        </div>
+        <div
+          class="container"
+          style="padding-top: 20px; flex-grow: 2; color: black"
+        >
+          <div class="d-flex justify-content-between px-4">
+            <h5>Price:</h5>
+            <h5 class="text-light">{{ viewproduct.productPrice }}</h5>
+          </div>
+          <hr />
+          <div class="px-4 d-flex justify-content-between">
+            <h5>Cetegory:</h5>
+            <h5 class="text-light">{{ viewproduct.productCategory }}</h5>
+          </div>
+          <hr />
+          <div class="px-4 d-flex justify-content-between">
+            <h5>Available:</h5>
+            <h5 class="text-light">{{ "Yes" }}</h5>
+          </div>
+          <hr />
+          <div class="px-4 d-flex justify-content-between">
+            <h5>No of Stocks:</h5>
+            <h5 class="text-light">{{ "99+" }}</h5>
+          </div>
+          <hr />
+        </div>
+        <div class="btn-group gap-5" style="padding: 20px;">
+          <button class="btn btn-light rounded" (click)="addcart()">Add Cart</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

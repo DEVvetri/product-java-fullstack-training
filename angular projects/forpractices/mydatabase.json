@@ -1,0 +1,194 @@
+{
+  "datas": [
+    {
+      "id": "7952",
+      "productImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/8/f/v/6-iq7131-8-5-reebok-rose-black-white-original-imags377kbjdmfut.jpeg?q=70",
+      "productName": "Pinky Shoes",
+      "productContent": "Austin 2.0 W Running Shoes For Women  (Red , 5)",
+      "productPrice": 1439,
+      "productId": 13,
+      "productRating": 3,
+      "productCategory": "shoes"
+    },
+    {
+      "id": "ffc4",
+      "productImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/i/d/b/4-ie0748-4-adidas-halblu-putmau-wonblu-original-imagz5dtsykvhxuh.jpeg?q=70",
+      "productName": "ANALOGUE-Watch-404",
+      "productContent": "All Matte Grey Elegant Series with Water Resistant & 1 Year Quartz Machinery Warranty Analog Watch - For Boys ANLG-428-GREY-GREY",
+      "productPrice": 245,
+      "productId": 13,
+      "productRating": 4,
+      "productCategory": "watch"
+    },
+    {
+      "id": "f6c9",
+      "productImage": "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe/l/j/z/5-rlo122-5-red-tape-pink-original-imahfgukfxx5qwez.jpeg?q=70",
+      "productName": "sdfghjk",
+      "productContent": "asdfghjk",
+      "productPrice": 234,
+      "productId": 13,
+      "productRating": 2,
+      "productCategory": "sdfghjkl"
+    }
+  ],
+  "data": [
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71IWpMTGrCL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Laptop Pro X1",
+      "productContent": "Ultra-thin, lightweight laptop with a powerful Intel Core i7 processor.",
+      "productPrice": 90,
+      "id": 0,
+      "productRating": 1,
+      "productCategory": "Electronics"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/610pMwN1z6L._AC_UL480_FMwebp_QL65_.jpg",
+      "productName": "GLG Gaming F34",
+      "productContent": "Single-origin beans from a sustainable farm in Colombia.",
+      "productPrice": 99,
+      "id": 1,
+      "productRating": 2,
+      "productCategory": "Laptops"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71WChkpECLL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "ASUS ROG",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 49,
+      "id": 2,
+      "productRating": 4,
+      "productCategory": "Laptops"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/7124KU8m7gL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "ASUS Vivobook Pro 15",
+      "productContent": "MSI Thin 15 Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) Thin 15 B12UC-1692IN Gaming Laptop  (15.6 Inch, Cosmos Gray, 1.86 Kg)",
+      "productPrice": 49,
+      "id": 3,
+      "productRating": 4,
+      "productCategory": "Laptops"
+    },
+    {
+      "productImage": "https://rukminim2.flixcart.com/image/312/312/xif0q/computer/x/2/y/thin-15-b12uc-1690in-gaming-laptop-msi-original-imagz4b4a5qmhqzt.jpeg?q=70",
+      "productName": "ASUS TUF 15",
+      "productContent": "MSI Thin 15 Intel Core i5 12th Gen 12450H - (16 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce RTX 3050) Thin 15 B12UC-1692IN Gaming Laptop  (15.6 Inch, Cosmos Gray, 1.86 Kg)",
+      "productPrice": 69,
+      "id": 4,
+      "productRating": 4.2,
+      "productCategory": "Laptops"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71JQ3kUrR9L._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Samsung 80 cm(32 inches)",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 133,
+      "id": 5,
+      "productRating": 1,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/81u+lUSZRDL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "MI 80 cm (32 inches)",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 13,
+      "id": 6,
+      "productRating": 5,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71MwDnn-ZaL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Samsung 80 cm(32 inches)",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 133,
+      "id": 7,
+      "productRating": 4,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71JQ3kUrR9L._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Redmi 80 cm (32 inches) F",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 33,
+      "id": 8,
+      "productRating": 2,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/71G5lf8y9OL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Sony 139 cm (55 inches) ",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 133,
+      "id": 9,
+      "productRating": 3,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/51ljnEaW0pL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Sony 139 cm (55 inches) ",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 19,
+      "id": 10,
+      "productRating": 2,
+      "productCategory": "TV"
+    },
+    {
+      "productImage": "https://m.media-amazon.com/images/I/41lHL5XiiDL._AC_UY327_FMwebp_QL65_.jpg",
+      "productName": "Sony 139 cm (55 inches) ",
+      "productContent": "Waterproof fitness band with heart rate monitoring and sleep tracking.",
+      "productPrice": 133.99,
+      "id": 11,
+      "productRating": 4,
+      "productCategory": "TV"
+    }
+  ],
+  "demo": [
+    {
+      "name": "vetri",
+      "age": 25,
+      "city": "chennai",
+      "id": 0
+    },
+    {
+      "name": "vel",
+      "age": 30,
+      "city": "adfsdf",
+      "id": 1
+    },
+    {
+      "name": "Shri",
+      "age": 30,
+      "city": "adfsdf",
+      "id": 2
+    },
+    {
+      "name": "Shri",
+      "age": 3,
+      "city": "adfsdf",
+      "id": 3
+    },
+    {
+      "id": 4,
+      "age": 3324,
+      "name": "sdfsd",
+      "city": "dsfdsf"
+    },
+    {
+      "id": 5,
+      "age": 34534,
+      "name": "sdfsd",
+      "city": "dgdfgfd"
+    },
+    {
+      "id": 6,
+      "age": 34534,
+      "name": "sdfsd",
+      "city": "dgdfgfd"
+    },
+    {
+      "id": 7,
+      "age": 34534,
+      "name": "sdfsd",
+      "city": "dgdfgfd"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.glassified{
+background: rgba(255, 255, 255, 0.21);
+border-start-end-radius: 16px;
+box-shadow: 4px 4px 20px 10px rgba(33, 237, 255, 0.666);
+
+backdrop-filter: blur(5.1px);
+-webkit-backdrop-filter: blur(5.1px);
+border: 1px solid rgba(255, 255, 255, 0.58);
+  border-left: 10px solid rgb(35, 200, 255);
+}
+.glassified-img{
+background: rgba(255, 255, 255, 0.659);
+border-end-start-radius: 16px;
+box-shadow: -4px 4px 20px 10px rgba(33, 237, 255, 0.666);
+backdrop-filter: blur(11.6px);
+-webkit-backdrop-filter: blur(11.6px);
+border: 1px solid rgba(255, 255, 255, 0.58);
+}
