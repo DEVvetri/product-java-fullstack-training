@@ -32,7 +32,6 @@ export class MyapiService {
   }
 
   deletedata(id:number){
-
-    return this.http.delete(this.myurl+`/${id}`).subscribe()
+    return this.http.delete(this.myurl+`/${id}`)
   }
 }

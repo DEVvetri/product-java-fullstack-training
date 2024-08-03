@@ -1,0 +1,39 @@
+<table class="table container-fluid" style="margin: 10px; width: 1000px">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">First</th>
+      <th scope="col">price</th>
+      <th scope="col">rating</th>
+      <th scope="col">Edit</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let datas of fectedData">
+      <th scope="row">{{ datas.id }}</th>
+      <td>{{ datas.name }}</td>
+      <td>{{ datas.price }}</td>
+      <td>{{ datas.rating }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-primary"
+          routerLink="/update/{{ datas.id }}"
+        >
+          Update
+        </button>
+      </td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-danger"
+          (click)="popData(datas.id)"
+          routerLink="/home"
+        >
+          Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>

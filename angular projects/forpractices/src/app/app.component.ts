@@ -5,13 +5,12 @@ import { ListComponent } from './product/list/list.component';
 import { ViewComponent } from './product/view/view.component';
 import { UpdateComponent } from './product/update/update.component';
 import { Product, ProductProjectService } from './product-project.service';
-import { ListProductsComponent } from './databasetesting/list-products/list-products.component';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink,RouterLinkActive,ListProductsComponent],
+  imports: [RouterOutlet,RouterLink,RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

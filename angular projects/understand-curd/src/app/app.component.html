@@ -1,0 +1,52 @@
+<div
+  class=""
+  style="
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+  "
+>
+  <div class="container d-flex flex-column">
+    <div
+      class="container title-bar d-flex flex-row-reverse px-5 justify-centent-end bg-primary"
+      style="height: 100px"
+    >
+      <div
+        *ngIf="isadd"
+        class="btn btn-info rounded align-self-center d-flex justify-centent-center"
+        style="width: 120px; font-weight: bold"
+        routerLink="/add"
+        (click)="isadd = false"
+      >
+        <i class="bi bi-plus-circle px-3"></i>Add
+      </div>
+      <div
+        *ngIf="!isadd"
+        class="btn btn-info rounded align-self-center d-flex justify-centent-center"
+        style="width: 120px; font-weight: bold"
+        routerLink="/home"
+        (click)="isadd = true"
+      >
+      <i class="bi bi-arrow-left-short"></i>Back
+      </div>
+    </div>
+    <div
+      class="container"
+      style="
+        height: 500px;
+        width: 100%;
+        background-color: blue;
+        display: flex;
+        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
+      "
+    >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
