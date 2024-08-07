@@ -1,9 +1,0 @@
-.glassified{
-  background: rgba(239, 237, 237, 0.219);
-  border-radius: 16px;
-  box-shadow: 4px 4px 20px 10px rgba(149, 149, 149, 0.666);
-
-  backdrop-filter: blur(5.1px);
-  -webkit-backdrop-filter: blur(5.1px);
-  border: 1px solid rgba(255, 255, 255, 0.58);
-  }

@@ -1,0 +1,44 @@
+create table tab_employee (emp_id varchar2(20),emp_name varchar2(20),emp_salary varchar2(20)
+insert into Tab_employee values (101,'kabilan',2000);
+insert into Tab_employee values (102,'raju',3000);
+select * form tab_employee
+select emp_id form tab_employee
+select * from tab_employee where emp_id = 101;
+select * from tab_employee where emp_name = 'raju';
+select * from tab_employee where emp_salary > 4000;
+select * from tab_employee where eid != 101;
+(or) only in oracle
+select * from tab_employee where eid <>101;
+update tab_employee set emp_sal=5000 where emp_id = 102;
+update tab_employee set emp_sal=5000,emp_name='ajay' where emp_id = 102;
+delete from tab_name where emp_id = 102;
+
+select * from tab_employee where emp_id in (101,103,105);
+select * from tab_employee where emp_id not in (101,103,105);
+select * from tab_employee where emp_salary between 2000 and 5000;
+select * from tab_employee where emp_salary not between 2000 and 5000;
+select * from tab_employee where emp_salary > 5000 and emp_id in(102,103);
+select * from tab_employee where emp_salary > 5000 or emp_id in(102,103);
+select * from tab_employee where emp_name like 'k%';
+select * from tab_employee where emp_name like '__j%';
+select * from tab_employee where emp_name like '%y';
+select * from tab_employee where emp_name like '%a_';
+select * from tab_employee where emp_name like '%a%';
+select * from tab_employee where emp_name is null;
+select * from tab_employee where emp_name is not null;
+select * from tab_employee order by emp_id desc;
+select * from tab_employee order by emp_name asce;
+select * from tab_employee order by emp_name;
+
+alter table tab_employee add date_join date;
+update tab_employee set date_join='17-JUN-24' where emp_id=101;
+update tab_employee set date_join=sysdate where emp_id=102;
+alter table tab_employee drop column date_join;
+
+alter table tab_employee modify emp_salary number(30);
+
+alter table tab_employee rename column emp_name to emp_name1;
+
+rename tab_employee to t_employee;
+
+drop table t_employee;
